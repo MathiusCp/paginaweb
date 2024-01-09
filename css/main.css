@@ -1,0 +1,86 @@
+body {
+    background-color: #f8f8f8;
+    color: rgb(109, 235, 37);
+    font-family: Roboto, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/fondo.animals.avif);
+    background-repeat:repeat;
+    background-size:auto;
+    background-attachment:local;
+    
+  }
+  #header {
+    display: flex; /* Que se junte los elementos en una sola linea*/
+    padding: 0px; /*Espaciado interno del header*/
+    margin: 0px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #nav {
+    background-color: #f8f8f8;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #nav-list {
+    list-style-type: none;
+    display: flex; /* Mostrar los elementos de la lista en línea */
+    margin: 0;
+    padding: 0;
+  }
+  #nav-list li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 20px 15px 20px;
+    font-size: 25px;
+  }
+  #nav-list li a:hover {
+    color: #0206fc;
+  }
+  #logo img {
+    max-width: 240px;
+    height: auto;
+  }
+  #footer-infor,
+  #contact-info {
+    padding: 0 20px;
+    text-align: right;
+  }
+  #redes {
+    margin-top: 15px;
+    margin-right: 20px;
+  }
+  
+ 
+  #footer {
+    background-color: #f8f8f8;
+    color: rgb(255, 93, 120);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #footer-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding-left: 15px;
+    font-size: 12px;
+  }
+  .pepe img {
+    max-width: max-content;
+    height: 400px;
+    object-fit: cover; /*Ajusta la imagen dentro del contenedor*/
+      border-radius: 15px;
+      border: 2.5px solid #fc4902;
+      position: relative;
+    left: 350px;
+  }
+  .jose {
+    position: relative;
+    left: 560px;
+  }
+  

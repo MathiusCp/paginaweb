@@ -1,0 +1,186 @@
+body {
+    background-color: #f8f8f8;
+    color: rgb(224, 141, 73);
+    font-family: Roboto, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/fondo.animals.avif);
+    background-repeat:repeat;
+    background-size:auto;
+    background-attachment:local;
+  }
+  
+  #header {
+    display: flex; /* Que se junte los elementos en una sola linea*/
+    padding: 0px; /*Espaciado interno del header*/
+    margin: 0px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #nav {
+    background-color: floralwhite;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #nav-list {
+    list-style-type: none;
+    display:flex; /* Mostrar los elementos de la lista en línea */
+    margin: 0;
+    padding: 0;
+  }
+  
+  #nav-list li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 15px 20px 15px 20px;
+  }
+  
+  #nav-list li a:hover {
+    color: #0206fc;
+  }
+  /*INICIO CARRUSEL*/
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /*Permite que las cards, se envuelvan en filas*/
+    gap: 30px; /* Espacio entre las cards*/
+    padding: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    border: 2px solid #fca311;
+    border-radius: 15px;
+    overflow: hidden; /*Oculta el contenido que se desvorda*/
+    -webkit-box-shadow: 10px -1px 50px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px -1px 50px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px -1px 50px -7px rgba(0, 0, 0, 0.75);
+    padding: 10PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card img {
+    max-width: max-content;
+    height: 300px;
+    object-fit: cover; /*Ajusta la imagen dentro del contenedor*/
+      border-radius: 15px;
+      border: 1px solid #14213d;
+  }
+  
+  .card-info{
+      padding: 10px;
+  }
+  
+  .card-info h2 {
+      margin-top: 0;
+  }
+  
+  .card-info p {
+      color: rgb(0, 255, 170);
+      font-size: 23px;
+  }
+  
+  .card-info a {
+      display: block;
+      text-align: right;
+      text-decoration: none;
+      color: #fca311;
+      font-weight: bold;
+  }
+  
+  .card-info a:hover {
+      color: #14213d;
+  }
+  
+  
+  
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Ajusta según tus necesidades */
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .carousel-slide {
+    display: none;
+    width: 100%;
+    text-align: center; /* Alinea la imagen en el centro */
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Asegura que la imagen no se agrande más allá de su tamaño original */
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  input[type="radio"]:checked + .carousel-slide {
+    display: block;
+    opacity: 1; /* Añade una transición suave si lo deseas */
+    transition: opacity 0.5s ease-in-out; /* Añade una transición suave si lo deseas */
+  }
+  
+  .carousel-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .carousel-nav label {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  input[type="radio"]:checked + .carousel-nav label {
+    background-color: #555;
+  }
+
+  #nav-list li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 20px 15px 20px;
+    font-size: 25px;
+  }
+  #nav-list li a:hover {
+    color: #0206fc;
+  }
+  #footer-infor,
+  #contact-info {
+    padding: 0 20px;
+    text-align: right;
+  }
+
+  #footer-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding-left: 15px;
+    font-size: 12px;
+  }
+  #laila{
+    max-width: max-content;
+    height: 400px;
+    object-fit: cover; /*Ajusta la imagen dentro del contenedor*/
+      border-radius: 15px;
+      border: 2.5px solid #fc4902;
+      position: relative;
+    left: 350px;
+  }
